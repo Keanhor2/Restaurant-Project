@@ -1,0 +1,500 @@
+/* navbar */
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+    background: #eee;
+}
+nav{
+    background: rgb(241, 178, 29);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    display: flex;
+    text-transform: uppercase;
+}
+.menu ul li a:hover{
+    border-bottom:2px solid #fff;
+
+}
+nav ul li{
+    list-style: none;
+    padding: 12px;
+}
+nav ul li:hover{
+    background: #000;
+    padding: 12px;
+    border-radius: 10px;
+}
+.active{
+    background: #000;
+    border-radius: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 2rem;
+    color: #fff;
+    
+}
+.logo{
+    color: rgb(255, 136, 0);
+    font-size: 3.6rem;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 5px;
+}
+.search{
+    margin: 10px;
+}
+input{
+    padding: 10px 2rem;
+    border-radius: 5px;
+    border:none;
+}
+
+/* Home page */
+/* body of website  have text*/
+
+.bg-img{
+    background-image:linear-gradient(rgba(32, 32, 32, 0.75),rgba(32, 32, 32, 0.75)),url(../image/Room.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragrap h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    text-align: center;
+    font-size: 4rem;
+}
+span{
+    color: orange;
+    font-size: 4rem;
+    
+}
+.paragrap p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+}
+/* button for sign in  and login*/
+.ct button{
+    margin: 1rem;
+    background-color: rgba(128, 128, 128, 0);
+    color: #fff;
+    padding: 10px 3.5rem;
+    border: 1px solid rgb(255, 136, 0);
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
+.ct button:hover{
+    background: orange;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+/* button for connection to manager */
+
+.ct-class{
+    display: flex;
+    justify-content: center;
+}
+.btn-so button{
+    
+    border: none;
+    background: rgba(255, 255, 255, 0);
+
+}
+
+.btn-media button{
+    border: 1px solid orange;
+    background: rgba(124, 21, 21, 0);
+    border-radius: 0.5rem;
+    margin: 10px;
+    
+}
+.btn-media button:hover{
+    background: orange;
+}
+img{
+    padding: 10px;
+}
+
+
+/* Room page */
+
+/* grid */
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.main-child{
+    background-image:url(../image/room.jpg) ;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 80vh;
+    width: 100%;
+}
+.child1,.child2,.child3,.child4,.child5,
+.child6,.child7,.child8,.child9,.child10{
+    margin: 10px 10px;
+    height: 70vh;
+
+}
+.child1{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)), url(../image/room1.jpg);
+    background-size: cover;
+}
+.child2{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)), url(../image/room2.jpg);
+    background-size: cover;
+}
+.child3{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)), url(../image/room3.jpg);
+    background-size: cover;
+}
+.child4{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)), url(../image/room4.jpg);
+    background-size: cover;
+}
+.child5{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)), url(../image/room5.jpg);
+    background-size: cover;
+}
+.child6{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)), url(../image/room6.jpg);
+    background-size: cover;
+}
+.child7{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)), url(../image/room7.jpg);
+    background-size: cover;
+}
+.child8{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)), url(../image/room8.jpg);
+    background-size: cover;
+}
+.child9{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)), url(../image/room9.jpg);
+    background-size: cover;
+}
+.child10{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.294)), url(../image/room10.jpg);
+    background-size: cover;
+}
+
+/* text */
+.top-title h2{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.click{
+    display: flex;
+    justify-content: center;
+}
+.click button{
+    padding: 15px 50px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    background: darkorange;
+
+}
+.button-book button{
+    background-color: rgb(248, 246, 246);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 9px;
+    border: 1px solid darkorange;
+}
+.button-book button:hover{
+    background: darkorange;
+    
+}
+.cast{
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.price h2{
+    color: #fff;
+}
+
+/* food page */
+/* make grid in food */
+span{
+    color: orange;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.box{
+    background: orange;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+main{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)),url(../image/food-main.jpg);
+    background-size: cover;
+    grid-column: 1/4;
+    background-color: orange;
+    height: 85vh;
+    color:#fff;
+    
+}
+
+.main h2{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 100px;
+}
+.main p{
+    text-align: center;
+    font-size: 1.5rem
+    
+}
+.box0{
+    background-image:linear-gradient(rgba(50, 50, 32, 0.548),rgba(32, 32, 32, 0.075)), url(../image/Fry\ food.jpg);
+    background-size: cover;
+    grid-column: 1/4;
+}
+.box0 h3{
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-top:130px;
+}
+.box1{
+    background-image: url(../image/food1.jpg);
+}
+.box2{
+    background-image: url(../image/food2.jpg);
+}
+.box3{
+    background-image: url(../image/food3.jpg);
+}
+.box4{
+    background-image: url(../image/food.jpg);
+}
+.box5{
+    background-image: url(../image/food5.jpg);
+}
+.box6{
+    background-image: url(../image/food6.jpg);
+}
+.box7{
+    background: url(../image/food7.jpg);
+}
+.box8{
+    background-image: url(../image/food8.jpg);
+}
+.box9{
+    background-image: url(../image/food9.jpg);
+}
+.box10{
+    background-image: url(../image/food10.jpg);
+}
+.box11{
+    background-image: url(../image/food11.jpg);
+}
+.box12{
+    background-image: url(../image/food4.jpg);
+}
+
+.box0,.box1,.box2,.box3,.box4,.box5,
+.box6,.box7,.box8,.box9,.box10,
+.box11,.box12{
+    height: 50vh;
+    margin: 20px;
+    
+}
+
+.order:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+}
+
+.order{
+    text-align: center;
+}
+.order h4{
+    font-size: 25px;
+    color: orange;
+}
+.order button{
+    background: rgba(255, 255, 255, 0);
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+.order button:hover{
+    color: #fff;
+    background: orange;
+    
+}
+hr{
+    border:1px solid orange;
+    margin-top: 2rem;
+    margin: 20px;
+}
+
+/* contact page */
+.info h1{
+    text-align: center;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+form{
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+
+}
+.contact-left h1{
+    color: orange;
+    text-align: center;
+}
+.text-contact span{
+    color: rgb(0, 0, 0);
+    
+}
+
+.contact-left{
+    border-radius: 10px 0  0 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    width: 40%;
+    background: rgb(68, 66, 66);
+    padding:10px ;
+    height: 60vh;
+}
+.contact-right{
+    width: 50%;
+    background: orange;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 0 10px 10px 0 ;
+}
+.contact-right h1{
+    text-align: center;
+}
+.name{
+    display: flex;
+}
+.name input{
+    padding: 10px;
+    width: 84%;
+    margin-top: 10px;
+}
+.email input,.password input{
+    padding: 10px;
+    width: 92%;
+    margin-top: 10px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.submit input{
+    margin-top: 10px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border:none;
+    background: darkorange;
+}
+.dis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.text-contact span{
+    font-size: 30px;
+}
+.icon-contact{
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    margin:5px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 166, 0, 0.527);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa{
+    color: #fff;
+}
+
+
+
+
+    /* Footer ==================================================================*/
+    footer{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.icon-footer{
+    background-color: #fff;
+    color: darkorange;
+    border-radius: 100px;
+    font-size: 6rem;
+    padding: 20px;
+    margin-top: 50px;
+    
+}
+.social-media h3{
+    text-align: center;
+    font-size: 30px;
+}
+.footer-logo h3{
+    text-align: center;
+    font-size: 30px;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+.link h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 20px;
+}
+.footer-logo p:hover,
+.social-media p:hover,
+.link p:hover{
+    color: darkorange;
+}
